@@ -13,7 +13,7 @@
     "build": "ui5 build -a --clean-dest",
     "build-self-contained": "ui5 build self-contained -a --clean-dest",
     "deploy:prod": "abap-deploy --config-path=./prod-abap-config.json",
-    "deploy:canary:": "abap-deploy --config-path=./canary-abap-config.json".
+    "deploy:canary:": "abap-deploy --config-path=./canary-abap-config.json",
     "build_and_deploy": "npm run build && npm run deploy:prod",
     "serve-dist": "ws --compress -d dist"
   },
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@ui5/cli": "^1.12.1",
     "eslint": "^5.16.0",
+    "abap-deploy": "1.0.0",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "^2.0.1",
